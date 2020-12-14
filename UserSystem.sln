@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserSystem", "UserSystem\UserSystem.csproj", "{8BF49606-4881-4648-BEDB-8C0BBE36608E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KullaniciPanelSetupLast", "KullaniciPanelSetupLast\KullaniciPanelSetupLast.vdproj", "{815FA451-C241-4691-9810-5C4C2377F10F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BF49606-4881-4648-BEDB-8C0BBE36608E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF49606-4881-4648-BEDB-8C0BBE36608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF49606-4881-4648-BEDB-8C0BBE36608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF49606-4881-4648-BEDB-8C0BBE36608E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815FA451-C241-4691-9810-5C4C2377F10F}.Debug|Any CPU.ActiveCfg = Debug
+		{815FA451-C241-4691-9810-5C4C2377F10F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25B7B59F-0ECE-4517-BC6A-4D9B581BF096}
+	EndGlobalSection
+EndGlobal

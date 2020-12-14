@@ -1,0 +1,60 @@
+﻿<Window x:Class="UserSystem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserSystem"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" Background="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Icon="iconfinder_User_4200769.png">
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"/>
+            <ColumnDefinition Width="599*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="2" Margin="0,0,0.334,-0.333">
+
+            <Label Content="KULLANICI GİRİŞİ" Canvas.Left="226" Canvas.Top="68" Background="{x:Null}" Foreground="White" Panel.ZIndex="109" Width="230" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.389,-0.091" Height="46" ></Label>
+
+            <Rectangle Height="45" Width="391" RenderTransformOrigin="0.631,1.143" Canvas.Left="215" Canvas.Top="61" Panel.ZIndex="99" Fill="#FF0F2E80">
+
+            </Rectangle>
+            <Border Height="319" Width="388" Canvas.Left="215" Canvas.Top="61" Background="#FFF0F0F0" CornerRadius="0,0,50,50">
+                <Border.Effect>
+                    <DropShadowEffect Color="#FFE1E1E1"/>
+                </Border.Effect>
+
+
+
+
+            </Border>
+
+            <!--textbox ve labellar-->
+            <Label Content="Kullanıcı Adı"  Canvas.Left="277" Canvas.Top="137" Height="32" Width="111" FontWeight="Bold" Foreground="Black" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Panel.ZIndex="102" RenderTransformOrigin="1.463,0.548"></Label>
+            <TextBox Panel.ZIndex="102"  Canvas.Left="263" Canvas.Top="169" Width="296" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="14" x:Name="txtKullaniciAdi"  />
+
+
+            <PasswordBox Panel.ZIndex="102" Canvas.Left="263" Canvas.Top="243"  Width="296" Height="31" x:Name="txtPassword" VerticalContentAlignment="Center" FontSize="14" PasswordChar="*" ></PasswordBox>
+            <Label Height="25" Width="68" Canvas.Left="527" Canvas.Top="68" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontWeight="Bold" FontSize="14" x:Name="lblIDAl" Panel.ZIndex="105"  RenderTransformOrigin="0.131,1.078" ></Label>
+
+            <!--<TextBox Height="30" TextWrapping="Wrap" Width="256" Canvas.Left="434" Canvas.Top="381" VerticalContentAlignment="Center" FontSize="14" x:Name="txtSifre"  ></TextBox>-->
+            <!--<TextBox   Height="30" TextWrapping="Wrap" Width="256" Canvas.Left="434" Canvas.Top="416" VerticalContentAlignment="Center" FontSize="14" x:Name="txtSifreTekrar" ></TextBox>-->
+
+            <Button Content="Giriş Yap" RenderTransformOrigin="4.316,5.267" Canvas.Left="441" Canvas.Top="294" Width="118" Height="36" FontWeight="Bold" Background="#FF7E7E7E" Click="Button_Click"  IsDefault="True"   ></Button>
+            <Button Content="Kapat" RenderTransformOrigin="4.316,5.267" Canvas.Left="264" Canvas.Top="294" Width="121" Height="36" FontWeight="Bold" Background="#FF7E7E7E" Click="Button_Click_1"  IsDefault="False" ></Button>
+            <Button Content="DB Ayarlar" RenderTransformOrigin="4.316,5.267" Canvas.Left="462" Canvas.Top="114" Width="121" Height="36" FontWeight="Bold" Background="#FF7E7E7E"  IsDefault="False" Click="Button_Click_2" ></Button>
+
+            <Label Background="#FFF0F0F0" Height="28" Width="327" Canvas.Left="247" Canvas.Top="342" RenderTransformOrigin="0.289,2.091" Panel.ZIndex="105" x:Name="lblHata" Foreground="Black" FontSize="14" VerticalContentAlignment="Center" ></Label>
+
+            <Image Source="Images\user_120285.png" x:Name="imgKullanici" Height="32" Width="26" Canvas.Left="263" Canvas.Top="137" RenderTransformOrigin="1.329,-0.163"  ></Image>
+
+            <Image x:Name="imagePassword" Height="25" Width="26" Canvas.Left="263" Canvas.Top="218" Source="Images\Key-icon.png" />
+
+            <Label Content="Şifre" Foreground="Black" FontSize="14" Canvas.Left="289" Canvas.Top="214" FontWeight="Bold" ></Label>
+
+
+
+        </Canvas>
+
+    </Grid>
+</Window>

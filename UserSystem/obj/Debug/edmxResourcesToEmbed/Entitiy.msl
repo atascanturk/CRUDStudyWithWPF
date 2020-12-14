@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KullaniciPanelModelStoreContainer" CdmEntityContainer="KullaniciPanelEntities1">
+    <EntitySetMapping Name="tbl_UserAccount">
+      <EntityTypeMapping TypeName="KullaniciPanelModel.tbl_UserAccount">
+        <MappingFragment StoreEntitySet="tbl_UserAccount">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERAD" ColumnName="USERAD" />
+          <ScalarProperty Name="USERSOYAD" ColumnName="USERSOYAD" />
+          <ScalarProperty Name="USERYAS" ColumnName="USERYAS" />
+          <ScalarProperty Name="USERMAIL" ColumnName="USERMAIL" />
+          <ScalarProperty Name="USERDOGUMTARIHI" ColumnName="USERDOGUMTARIHI" />
+          <ScalarProperty Name="USEROKUL" ColumnName="USEROKUL" />
+          <ScalarProperty Name="USERDENEYIM" ColumnName="USERDENEYIM" />
+          <ScalarProperty Name="USERSTATUS" ColumnName="USERSTATUS" />
+          <ScalarProperty Name="USERNICK" ColumnName="USERNICK" />
+          <ScalarProperty Name="USERPASSWORD" ColumnName="USERPASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Users">
+      <EntityTypeMapping TypeName="KullaniciPanelModel.tbl_Users">
+        <MappingFragment StoreEntitySet="tbl_Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="USERTYPE" ColumnName="USERTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

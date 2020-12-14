@@ -1,0 +1,29 @@
+﻿<Application x:Class="UserSystem.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UserSystem"
+             
+             Startup="Application_Startup">
+            
+    <Application.Resources>
+
+        <Style x:Key="HeaderStyle" TargetType="{x:Type DataGrid}" >
+
+            <Setter Property="ColumnHeaderStyle" Value="{DynamicResource header}"></Setter>
+            
+        </Style>
+        
+        <Style x:Key="header" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#FF0F2E80"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+        <BitmapImage x:Key="sifre" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\canturk.atas\source\repos\UserSystem\UserSystem\Key-icon.png"/>
+
+
+    </Application.Resources>
+</Application>
+
+

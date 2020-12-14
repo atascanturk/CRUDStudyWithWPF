@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KullaniciPanelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_UserAccount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERAD" Type="varchar" MaxLength="50" />
+    <Property Name="USERSOYAD" Type="varchar" MaxLength="50" />
+    <Property Name="USERYAS" Type="int" />
+    <Property Name="USERMAIL" Type="varchar" MaxLength="50" />
+    <Property Name="USERDOGUMTARIHI" Type="datetime" />
+    <Property Name="USEROKUL" Type="varchar" MaxLength="50" />
+    <Property Name="USERDENEYIM" Type="int" />
+    <Property Name="USERSTATUS" Type="bit" />
+    <Property Name="USERNICK" Type="varchar" MaxLength="50" />
+    <Property Name="USERPASSWORD" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERID" Type="int" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="50" />
+    <Property Name="USERTYPE" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="KullaniciPanelModelStoreContainer">
+    <EntitySet Name="tbl_UserAccount" EntityType="Self.tbl_UserAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Users" EntityType="Self.tbl_Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
